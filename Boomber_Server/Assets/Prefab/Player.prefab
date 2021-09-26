@@ -146,3 +146,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   characterController: {fileID: 7587545777821982647}
+  isUpdatePosition: 0
+  isUpdateScore: 0

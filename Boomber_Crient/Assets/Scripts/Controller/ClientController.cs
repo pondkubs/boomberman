@@ -1,11 +1,13 @@
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ClientController : MonoBehaviour
 {
     [SerializeField] private PlayerController playerControllerPrefab;
     [SerializeField] private CoinController coinController;
     [SerializeField] private Client client;
+    [SerializeField] private Text scoreText;
     private int playerId = -1;
     private Dictionary<int, PlayerController> playerControllers = new Dictionary<int, PlayerController>();
 
@@ -62,5 +64,12 @@ public class ClientController : MonoBehaviour
                 player.Move(playerPositionModel.Position);
             }
         }
+
+        coinController.OnUpdate(model);
+    }
+
+    public void OnUpdatePlayerModel(UpdatePlayerModel model)
+    {
+        scoreText.text = $"Score : {model.Score}";
     }
 }

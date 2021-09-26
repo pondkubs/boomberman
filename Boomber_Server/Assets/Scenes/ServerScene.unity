@@ -162,7 +162,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 442239747}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.38271457, y: -0.046003126, z: -0.65183175}
+  m_LocalPosition: {x: 0, y: 1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -355,7 +355,6 @@ GameObject:
   - component: {fileID: 1881536978}
   - component: {fileID: 1881536979}
   - component: {fileID: 1881536980}
-  - component: {fileID: 1881536981}
   m_Layer: 0
   m_Name: ServerController
   m_TagString: Untagged
@@ -390,6 +389,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   serverController: {fileID: 1881536980}
+  coinController: {fileID: 442239748}
 --- !u!114 &1881536980
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -404,23 +404,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   server: {fileID: 1881536979}
   playerControllerPrefab: {fileID: 6007562195593361757, guid: e138c5413d0fcc249a5a882403737b9f, type: 3}
-  coinController: {fileID: 1881536981}
+  coinController: {fileID: 442239748}
   spawnArea:
     size: {x: 8, y: 8}
---- !u!114 &1881536981
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1881536977}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 45fd686ac4fe9a24f91e5ba3dd0877d6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  coinPrefab: {fileID: 1225877755941417031, guid: 8540d69cb6bac0f4fa6ca8f5cd5a0f41, type: 3}
-  coinAmount: 5
 --- !u!1001 &7470178315334001046
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -434,15 +420,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6386750691860210430, guid: 676d498093e98c74298d9438dad8f7e5, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.38271457
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6386750691860210430, guid: 676d498093e98c74298d9438dad8f7e5, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.046003126
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6386750691860210430, guid: 676d498093e98c74298d9438dad8f7e5, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.65183175
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6386750691860210430, guid: 676d498093e98c74298d9438dad8f7e5, type: 3}
       propertyPath: m_LocalRotation.w
