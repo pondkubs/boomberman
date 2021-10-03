@@ -281,7 +281,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e82cc7777b314deab614357b046ccf8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerControllerPrefab: {fileID: 8527500101544187696, guid: 3473484de91b7444fbf562b23b88ae37, type: 3}
+  playerControllerPrefab: {fileID: 7156276156045142732, guid: 323bc0b2eadf08e419b5a9433f1ce937, type: 3}
   coinController: {fileID: 1954424053}
   bombController: {fileID: 941160477}
   client: {fileID: 429585390}
